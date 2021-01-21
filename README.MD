@@ -85,10 +85,8 @@ Between every test case the following was done
 [bed_mesh]
 speed: 150
 horizontal_move_z: 5
-#mesh_min: 38,35
 mesh_min: 5,5
 mesh_max: 275,240
-mesh_max: 218, 210
 algorithm: bicubic
 mesh_pps: 0
 ```
