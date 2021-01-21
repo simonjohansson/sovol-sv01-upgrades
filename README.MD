@@ -4,17 +4,24 @@ I dont want to recompile + reupload to test every change I want to make, therefo
 
 Klipper has very active development, a ton of cool features that are missing in Marlin and is in general a lot more easy/quick to work with.
 
+
 Price: Depends on the version of Raspberry Pi you get
+
 Price/Performance: 5/5
+
 Price/Niceness factor: 5/5
 
 # Noise
 
 Put in a new motherboard with silent steppers, a couple of 120mm fans for the electronics cooling, a 4020 silent fan on the hotend and a better 5015 fan for the parts cooling and you will have a really quiet machine.
 
+
 Price: Around 80 EUR
+
 Price/Performance: 0/5
+
 Price/Niceness factor: 5/5
+
 
 I first ofted for a fancy 4020 24v Sunon fan(MF40202V21000UA99) for the hotend cooling, but it was a bit noise so I decided to try a 4020 12v Noctua(NF-A4x20 FLX) that drastically reduced the noise and I have yet to experience any heat creap and clogged hotends. For parts cooling I opted for a Sunon MF50151V1-A99.
 
