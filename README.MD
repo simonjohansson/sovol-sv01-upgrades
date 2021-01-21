@@ -24,33 +24,48 @@ I used [this](https://www.thingiverse.com/thing:4097206) case lid to make room f
 
 # Frame stability
 
+## TLDR
+
 TODO
+
+## Proceess
+Ive placed my phone like this
+
+![phone placement](./img/frame/placement.jpg)
+
+And ran three tests(x movements, y movement, cross movements, these files are in the gcode folder. TLDR they cause a lot of vibrations) and meassured the vibrations with a [vibration analysis app](https://apps.apple.com/us/app/vibration-analysis/id817385888)
+
+Then I mounted the following parts
+
+![parts](./img/frame/parts.jpg)
+
+And ran the same tests again
+
+## X gcode
+
+![x](./img/frame/img/frame/x_comparison.jpg)
+
+## Y gcode
+
+![x](./img/frame/img/frame/y_comparison.jpg)
+
+## Cross
+
+![cross](./img/frame/img/frame/cross_comparison.jpg)
 
 # Bed
 
 ## TLDR
 
-```
-1. Princore plate range:
-2. Sovol plate and Sovol glass flat side up range: 0.25 mm
-4. Sovol plate and Sovol glass bumpy side up range: 0.34 mm
-5. Sovol plate and spring steel range: 0.36 mm
-```
-
-* If you dont want anything fancy the stock glass bed is plenty good. 
-* If you want a magnetic spring steel surface, you need a better(machined) build plate.
-* If you need to print with high bed temperatures, you need a better(machined) build plate.
-
-Price: 115 eur
-Price/Performance: 0/5 (If you do not need heated bed and/or spring steel)
-Price/Performance: 5/5 (If you need heated bed and/or spring steel)
-Price/Niceness factor: 3/5
+TODO
 
 ## Hot vs cold bed
 
 When heating up the build plate it will warp. Compare these two measurments with stock build plate + magnetic base kit at room temperature(20c) and allowing the heated bed sit at 65 degrees for 10 mins before taking the second test.
 
-This does not happen with the milled build plate from Princore.
+![cold](./img/bed/sovol-magnetic-cold.png)
+
+![warm](./img/bed/sovol-magnetic-warm.png)
 
 ## Proceess
 Between every test case the following was done
@@ -80,12 +95,18 @@ min: -0.185000 mm
 max: 0.062500 mm
 range: 0.25 mm
 ```
+
+![glass flat side up](./img/bed/sovol-glass-flat.png)
+
 #### Textured side up
 ```
 min: -0.272500
 max: 0.072500
 range: 0.34 mm
 ```
+
+![glass flat side up](./img/bed/sovol-glass-bumpy.png)
+
 ### Princore milled build plate
 
 https://princore.de/products/sovol-sv01-flexplate-druckbett-druckplatte-set-magnetsystem-federstahl-blech?_pos=3&_sid=228fae5d1&_ss=r
@@ -99,6 +120,9 @@ min: -0.230000 mm
 max: 0.130000 mm
 range: 0.36 mm
 ```
+
+![sovol magnetic](./img/bed/sovol-magnetic-cold.png)
+
 
 # Hotend
 
