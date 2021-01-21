@@ -43,15 +43,15 @@ And ran the same tests again
 
 ## X gcode
 
-![x](./img/frame/img/frame/x_comparison.jpg)
+![x](./img/frame/x_comparison.jpg)
 
 ## Y gcode
 
-![x](./img/frame/img/frame/y_comparison.jpg)
+![x](./img/frame/y_comparison.jpg)
 
 ## Cross
 
-![cross](./img/frame/img/frame/cross_comparison.jpg)
+![cross](./img/frame/cross_comparison.jpg)
 
 # Bed
 
