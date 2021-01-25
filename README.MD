@@ -40,7 +40,7 @@ Ive placed my phone like this
 
 ![phone placement](./img/frame/placement.jpg)
 
-And ran three tests(x movements, y movement, cross movements, these files are in the gcode folder. TLDR they cause a lot of vibrations) and meassured the vibrations with a [vibration analysis app](https://apps.apple.com/us/app/vibration-analysis/id817385888)
+And ran three tests(x movements, y movement, cross movements, these files are in the gcode folder. tldr they cause a lot of vibrations) and meassured the vibrations with a [vibration analysis app](https://apps.apple.com/us/app/vibration-analysis/id817385888)
 
 Then I mounted the following parts
 
@@ -64,7 +64,21 @@ And ran the same tests again
 
 ## TLDR
 
-TODO
+```
+1. Princore plate range: TODO
+2. Sovol plate and Sovol glass flat side up range: 0.25 mm
+4. Sovol plate and Sovol glass bumpy side up range: 0.34 mm
+5. Sovol plate and spring steel range: 0.36 mm
+```
+
+* If you dont want anything fancy the stock glass bed is plenty good. 
+* If you want a magnetic spring steel surface, you need a better(machined) build plate.
+* If you need to print with high bed temperatures, you need a better(machined) build plate.
+
+Price: 115 eur
+Price/Performance: 0/5 (If you do not need heated bed and/or spring steel)
+Price/Performance: 5/5 (If you need heated bed and/or spring steel)
+Price/Niceness factor: 3/5
 
 ## Hot vs cold bed
 
@@ -73,6 +87,8 @@ When heating up the build plate it will warp. Compare these two measurments with
 ![cold](./img/bed/sovol-magnetic-cold.png)
 
 ![warm](./img/bed/sovol-magnetic-warm.png)
+
+This does not happen with the milled build plate from Princore.
 
 ## Proceess
 Between every test case the following was done
