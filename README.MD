@@ -1,6 +1,6 @@
 # Firmware
 
-I dont want to recompile + reupload to test every change I want to make, therefore I chose to use Klipper for my firmware.
+I don't want to recompile + reupload to test every change I want to make, therefore I chose to use Klipper for my firmware.
 
 Klipper has very active development, a ton of cool features that are missing in Marlin and is in general a lot more easy/quick to work with.
 
@@ -29,13 +29,18 @@ For the 120mm fans I just bought a 3 pack of silent fans for 15 eur and they are
  
 I used [this](https://www.thingiverse.com/thing:4097206) case lid to make room for the 120mm fans and [this](https://www.thingiverse.com/thing:4013256) hotend adapter to make room for the bigger fans.
 
-# Frame stability
+# Frame
 
 ## TLDR
 
 Stiffen up the frame, it will do you good. But the real star of the show is Klippers Input Shaper.
 
-Here are two test cubes, both printed at 0.3mm layer height, 150mm/s across the board (external perimeters, infill, solid layers etc.). The left after frame stiffening, and the right after frame stiffening + input shaper.
+Here are two test cubes. Both printed using Das Filament PETG, 0.3mm layer height, stupid fast 150mm/s across the board (external perimeters, infill, solid layers etc.) and 7000 mm/s^2 max_accel. The left after frame stiffening, and the right after frame stiffening + input shaper.
+
+![x](./img/input_shaper/x.jpeg)
+![y](./img/input_shaper/y.jpeg)
+![side](./img/input_shaper/side.jpeg)
+
 
 ## Process
 I measured the resonance for X and Y with the help of Klippers [auto-tune input shaper](https://www.klipper3d.org/Measuring_Resonances.html) and a ADXL345 accelerometer. 
@@ -74,8 +79,11 @@ The peak at 27hz went from 211700 to 156200, a ~30% reduction.
 * If you need to print with high bed temperatures, you need a better(machined) build plate.
 
 Price: 115 eur
+
 Price/Performance: 0/5 (If you do not need heated bed and/or spring steel)
+
 Price/Performance: 5/5 (If you need heated bed and/or spring steel)
+
 Price/Niceness factor: 3/5
 
 ## Hot vs cold bed
