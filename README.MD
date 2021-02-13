@@ -33,32 +33,30 @@ I used [this](https://www.thingiverse.com/thing:4097206) case lid to make room f
 
 ## TLDR
 
-TODO
+Stiffen up the frame, it will do you good. But the real star of the show is Klippers Input Shaper.
 
-## Proceess
-Ive placed my phone like this
+Here are two test cubes, both printed at 0.3mm layer height, 150mm/s across the board (external perimeters, infill, solid layers etc.). The left after frame stiffening, and the right after frame stiffening + input shaper.
 
-![phone placement](./img/frame/placement.jpg)
+## Process
+I measured the resonance for X and Y with the help of Klippers [auto-tune input shaper](https://www.klipper3d.org/Measuring_Resonances.html) and a ADXL345 accelerometer. 
 
-And ran three tests(x movements, y movement, cross movements, these files are in the gcode folder. tldr they cause a lot of vibrations) and meassured the vibrations with a [vibration analysis app](https://apps.apple.com/us/app/vibration-analysis/id817385888)
-
-Then I mounted the following parts
+Then I mounted the following parts on the frame
 
 ![parts](./img/frame/parts.jpg)
 
 And ran the same tests again
 
-## X gcode
+## X
 
-![x](./img/frame/x_comparison.jpg)
+![x](./img/resonance/x_comparison.png)
 
-## Y gcode
+The peak at 29hz went from 627500 to 530700, a ~17% reduction.
 
-![x](./img/frame/y_comparison.jpg)
+## Y
 
-## Cross
+![parts](./img/resonance/y_comparison.png)
 
-![cross](./img/frame/cross_comparison.jpg)
+The peak at 27hz went from 211700 to 156200, a ~30% reduction.
 
 # Bed
 
@@ -145,6 +143,8 @@ range: 0.36 mm
 ![sovol magnetic](./img/bed/sovol-magnetic-cold.png)
 
 
-# Hotend
+# Print head
 
-TODO
+Linear rail + BMG + Dragon == <3
+
+![printhead](./img/IMG_6560.jpeg)
